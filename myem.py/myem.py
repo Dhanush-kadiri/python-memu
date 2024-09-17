@@ -7,7 +7,7 @@ from difflib import SequenceMatcher
 from io import BytesIO
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000', 'http://192.168.0.101'])
+CORS(app, origins=['http://localhost:3000', 'http://192.168.0.101',"https://test1-inky-three.vercel.app"])
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+pymysql://root:root@localhost/myem'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
